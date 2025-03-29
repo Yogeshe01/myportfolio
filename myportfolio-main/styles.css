@@ -1,0 +1,216 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Dark Theme with Background Image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('BACKGROUND\ IMAGE.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f1f1f1;
+    padding: 20px;
+    overflow: visible;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to improve contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ffd700; /* Brighter gold for better visibility */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Header */
+header h1:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00, 0 0 60px #ffcc00;
+}
+
+/* Job Title */
+header p {
+    font-size: 1.5em;
+    color: #ffffff; /* Pure white for maximum visibility */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Contact Links */
+.contact-info a {
+    color: #00bfff; /* Bright neon blue */
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #ff4500; /* Orange-red glow */
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+}
+
+/* Profile & Menu Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Profile Image - Rounded with Glow */
+.profile-pic {
+    display: block;
+    margin: auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #00abf0;
+    box-shadow: 0 0 25px rgba(0, 171, 240, 0.7);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover Effect for Profile Image */
+.profile-pic:hover {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 0 35px rgba(0, 171, 240, 1);
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+    background: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* Hover Effect - Lift Effect */
+section:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #f1f1f1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Text */
+h2:hover, p:hover {
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+    transform: scale(1.05);
+}
+
+/* Menu */
+#menu {
+    text-align: center;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Menu Headings */
+#menu h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+/* Menu Links */
+#menu ul {
+    list-style-type: none;
+}
+
+#menu a {
+    color: #1e90ff;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Menu Links */
+#menu a:hover {
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #1e90ff, #00abf0);
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    background: linear-gradient(135deg, #ff6347, #ff4500);
+    box-shadow: 8px 8px 20px rgba(255, 99, 71, 0.5);
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Hover Effect for Images in Sections */
+section img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Images Lift & Glow */
+section img:hover {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #b0b0b0;
+    opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, section, footer {
+    animation: fadeIn 1s ease-in-out;
+}
